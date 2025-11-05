@@ -1,5 +1,5 @@
+package navya.first.BookManagerApp;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Main {
                     manager.addBook(title, author);
                     System.out.println("Book added!");
                     break;
- case 2:
+                case 2:
                     System.out.print("Enter book title to search: ");
                     String searchTitle = scanner.nextLine();
                     Book found = manager.searchBook(searchTitle);

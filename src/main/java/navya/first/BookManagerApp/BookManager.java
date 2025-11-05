@@ -1,3 +1,4 @@
+package navya.first.BookManagerApp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,8 +24,10 @@ public class BookManager {
         return null; // not found
     }
 
-    // Get all books
+    // Get all books (The Corrected Method)
     public List<Book> getAllBooks() {
-        return books;
+        // This returns a *new copy* of the list,
+        // protecting the original list from being changed.
+        return new ArrayList<>(books);
     }
 }
